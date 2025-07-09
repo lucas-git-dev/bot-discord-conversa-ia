@@ -11,8 +11,6 @@ TOKEN_OPENAI = os.getenv("TOKEN_OPENAI")
 
 client_ai = OpenAI(api_key=os.getenv("TOKEN_OPENAI"))
 
-openai.api_key = TOKEN_OPENAI
-
 intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
